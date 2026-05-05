@@ -87,3 +87,26 @@ FROM customer
 GROUP BY age_group
 ORDER BY total_revenue desc;
 
+
+SELECT
+    category,
+    discount_applied,
+    COUNT(*) AS order_count,
+    ROUND(AVG(purchase_amount), 2) AS avg_purchase,
+    ROUND(SUM(purchase_amount), 2) AS total_revenue,
+    ROUND(AVG(review_rating), 2) AS avg_rating
+FROM customer
+GROUP BY category, discount_applied
+ORDER BY category, discount_applied DESC;
+
+
+
+SELECT
+    frequency_of_purchases,
+    COUNT(*) AS customer_count,
+    ROUND(AVG(purchase_amount), 2) AS avg_purchase,
+    ROUND(AVG(review_rating), 2) AS avg_rating,
+    ROUND(100.0 * SUM(CASE WHEN discount_applied = 'Yes' THEN 1 ELSE 0 END) / COUNT(*), 2) AS discount_rate_pct
+FROM customer
+GROUP BY frequency_of_purchases
+ORDER BY avg_purchase DESC;

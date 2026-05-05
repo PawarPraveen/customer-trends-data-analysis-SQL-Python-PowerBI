@@ -1,6 +1,9 @@
 # 👨🏻‍💻Customer Behavior Data Analyst Portfolio Project
 This project represents a complete, industry standard, end-to-end data analytics workflow, designed to mirror the real responsibilities of professional analysts in modern business environments. The project encompasses all critical stages of data analysis, from data preparation and modeling to insight generation, visualization, and reporting.
-
+## Recent updates
+- Added MySQL validation support in `Customer_Shopping_Behavior_Analysis.ipynb` to confirm server connectivity and database availability before loading data.
+- Corrected the MySQL database target from `customer_behavior` to `customer_behavior_db` for the current MySQL setup.
+- Included new SQL analysis suggestions in `customer_behavior_sql_queries.sql` for discount impact and purchase frequency insights.
 This project is perfect for:
 - 📊 Data Analyst aspirants who want to build a strong **Portfolio Project** for interviews and LinkedIn
 - 📚 Anyone learning Python, SQL, and Power BI
@@ -28,7 +31,7 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI.git
+   git clone https://github.com/PawarPraveen/customer-trends-data-analysis-SQL-Python-PowerBI.git
    cd customer-trends-data-analysis-SQL-Python-PowerBI
    ```
 2. **Open Customer_Shopping_Behavior_Analysis.ipynb notebook**
