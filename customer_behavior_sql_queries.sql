@@ -88,6 +88,9 @@ GROUP BY age_group
 ORDER BY total_revenue desc;
 
 
+--Q11. How do discounts impact customer behavior and satisfaction? Compare order volume, 
+-- average purchase amount, revenue, and ratings between discounted and non-discounted 
+-- purchases across all product categories.
 SELECT
     category,
     discount_applied,
@@ -101,6 +104,9 @@ ORDER BY category, discount_applied DESC;
 
 
 
+--Q12. How does purchase frequency affect customer spending patterns and satisfaction? 
+-- Analyze customer count, average purchase amount, satisfaction ratings, and discount 
+-- utilization rate across different purchase frequencies.
 SELECT
     frequency_of_purchases,
     COUNT(*) AS customer_count,
